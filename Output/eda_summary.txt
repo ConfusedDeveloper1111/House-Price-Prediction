@@ -1,0 +1,44 @@
+
+============================================================
+         HOUSE PRICE PREDICTION — EDA SUMMARY
+============================================================
+
+DATASET
+-------
+Rows        : 20640
+Columns     : 9
+Missing Val : 0
+
+FEATURES
+--------
+MedInc         float64
+HouseAge       float64
+AveRooms       float64
+AveBedrms      float64
+Population     float64
+AveOccup       float64
+Latitude       float64
+Longitude      float64
+MedHouseVal    float64
+
+TARGET VARIABLE (MedHouseVal)
+-----------------------------
+Min    : 0.1500
+Max    : 5.0000
+Mean   : 2.0686
+Median : 1.7970
+Std    : 1.1540
+
+KEY OBSERVATIONS
+----------------
+1. Zero missing values — no imputation needed
+2. MedInc is strongest predictor (corr ~0.69)
+3. AveOccup, Population have extreme outliers (max 1243, 35682)
+4. Price capped at 5.0 ($500k) — will affect high-end predictions
+5. Coastal areas (LA, SF) clearly most expensive
+6. AveRooms & AveBedrms are highly correlated — multicollinearity risk
+
+NEXT STEP
+---------
+Feature Engineering — outlier capping, new features, scaling
+============================================================

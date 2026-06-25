@@ -1,0 +1,39 @@
+
+============================================================
+      HOUSE PRICE PREDICTION — FINAL METRICS REPORT
+============================================================
+
+TEST SET RESULTS
+----------------
+
+Linear Regression
+  MAE  : 0.4149  (~$41,487 average error)
+  RMSE : 0.5613  (~$56,132 root mean sq error)
+  R²   : 0.6697
+
+Random Forest
+  MAE  : 0.3023  (~$30,226 average error)
+  RMSE : 0.4433  (~$44,326 root mean sq error)
+  R²   : 0.7940
+
+XGBoost ✅ BEST MODEL
+  MAE  : 0.2680  (~$26,801 average error)
+  RMSE : 0.3938  (~$39,385 root mean sq error)
+  R²   : 0.8374
+
+CROSS-VALIDATION R² (5-Fold)
+-----------------------------
+  Linear Regression : 0.6567
+  Random Forest     : 0.7720
+  XGBoost           : 0.8256
+
+CONCLUSION
+----------
+XGBoost is selected as the final production model.
+- Best R² of 0.8374 on test set
+- Lowest MAE of $26,801
+- Consistent CV scores confirm no overfitting
+- MedInc confirmed as strongest predictor
+- Price cap at $500k introduces unavoidable error at higher end
+
+============================================================

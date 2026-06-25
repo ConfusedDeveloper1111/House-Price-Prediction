@@ -1,0 +1,39 @@
+
+============================================================
+       HOUSE PRICE PREDICTION — FEATURE ENGINEERING SUMMARY
+============================================================
+
+ORIGINAL DATASET
+----------------
+Rows    : 20640
+Columns : 9
+
+AFTER FEATURE ENGINEERING
+--------------------------
+Rows    : 16540
+Columns : 12
+Removed : 4100 rows
+
+OPERATIONS PERFORMED
+--------------------
+1. Removed price-capped rows (MedHouseVal >= 5.0)
+2. Removed outliers via IQR on:
+   - AveRooms
+   - AveBedrms
+   - Population
+   - AveOccup
+
+NEW FEATURES CREATED
+--------------------
+1. RoomsPerHousehold      = AveRooms / AveOccup
+2. BedroomsPerRoom        = AveBedrms / AveRooms
+3. PopulationPerHousehold = Population / AveOccup
+
+FINAL COLUMNS
+-------------
+['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude', 'MedHouseVal', 'RoomsPerHousehold', 'BedroomsPerRoom', 'PopulationPerHousehold']
+
+NEXT STEP
+---------
+Model Training — Linear Regression, Random Forest, XGBoost
+============================================================
