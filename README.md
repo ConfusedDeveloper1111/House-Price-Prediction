@@ -10,7 +10,7 @@ An end-to-end machine learning project that predicts California house prices fro
 
 ## Project at a Glance
 
-<img src="./house_price_readme_assets/project-overview-pipeline.png" alt="Project overview pipeline" width="100%" />
+![Project_Overview_Pipeline](docs/Project_Overview_Pipeline.png)
 
 This project follows a full ML workflow:
 
@@ -58,9 +58,7 @@ It then automatically creates 3 engineered features and returns a predicted hous
 ---
 
 ## Feature Engineering
-
-<img src="./house_price_readme_assets/feature-engineering-deep-dive.png" alt="Feature engineering deep dive" width="100%" />
-
+![Feature Engineering Deep Dive](docs/Feature_Engineering_Deep_Dive.png)
 Three engineered features were added:
 
 - `RoomsPerHousehold = AveRooms / AveOccup`
@@ -79,8 +77,7 @@ Cleaning steps included:
 
 ## Geographic Insight
 
-<img src="./house_price_readme_assets/geographic-price-heatmap.png" alt="Geographic price heatmap" width="100%" />
-
+![Geographic_Price_Heatmap_Visualization](docs/Geographic_Price_Heatmap_Visualization.png)
 This visualization makes the main business insight obvious:
 
 - Coastal California is more expensive
@@ -91,8 +88,7 @@ This visualization makes the main business insight obvious:
 
 ## Model Comparison
 
-<img src="./house_price_readme_assets/model-comparison-battle.png" alt="Model comparison battle" width="100%" />
-
+![Model_Comparison_Battle](docs/Model_Comparison_Battle.png)
 Three models were trained and compared using 5-fold cross validation.
 
 | Model | CV R² | Test MAE | Test RMSE | Test R² |
@@ -111,8 +107,7 @@ Three models were trained and compared using 5-fold cross validation.
 
 ## Live Inference Interface
 
-<img src="./house_price_readme_assets/live-app-deployment.png" alt="Live app and deployment" width="100%" />
-
+![Live_App_&_Deployment](docs/Live_App_&_Deployment.png)
 The deployed Gradio app lets users:
 
 - Adjust input sliders
